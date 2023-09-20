@@ -214,7 +214,53 @@ function showWelcome() {
           posdesc = "来碗热干面！";
           break;
         case "湖南省":
-          posdesc = "三湘四水，相约湖南。所谓不到潇湘岂有诗！";
+          switch (ipLoacation.result.ad_info.city) {
+            case "长沙市":
+              posdesc = "山水洲城，快乐长沙。";
+              break;
+            case "株洲市":
+              posdesc = "神农福地，动力株洲。";
+              break;
+            case "湘潭市":
+              posdesc = "伟人故里，大美湘潭。";
+              break;
+            case "张家界市":
+              posdesc = "绝版张家界，惊艳全世界。";
+              break;
+            case "岳阳市":
+              posdesc = "天下洞庭，乐在岳阳。";
+              break;
+            case "湘西土家族苗族自治州":
+              posdesc = "锦绣潇湘，神秘湘西。";
+              break;
+            case "衡阳市":
+              posdesc = "天下南岳，独秀衡阳。";
+              break;
+            case "邵阳市":
+              posdesc = "奇美邵阳，浪漫崀山。";
+              break;
+            case "郴州市":
+              posdesc = "锦绣潇湘，别样郴州。";
+              break;
+            case "永州市":
+              posdesc = "锦绣潇湘，美在永州。";
+              break;
+            case "怀化市":
+              posdesc = "南国雪峰，嗨游怀化。";
+              break;
+            case "常德市":
+              posdesc = "锦绣潇湘，亲亲常德。";
+              break;
+            case "娄底市":
+              posdesc = "湘军故里，传奇娄底。";
+              break;
+            case "益阳市":
+              posdesc = "益山益水，益美益阳。";
+              break;
+            default:
+              posdesc = "三湘四水。相约湖南。不到潇湘岂有诗！";
+              break;
+          }
           break;
         case "广东省":
           posdesc = "老板来两斤福建人。";
